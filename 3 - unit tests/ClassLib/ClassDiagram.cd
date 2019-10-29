@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLib.State.EndGame" Collapsed="true">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\EndGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.State.Game">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAQAAAABAAIAAAAAAiAAEABAAAAAAACAAARAAAAAA=</HashCode>
+      <FileName>State\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.State.GameProcess" Collapsed="true">
+    <Position X="11.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\GameProcess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.State.StartMenu" Collapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\StartMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Memento.GameHistory" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Memento\GameHistory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Memento.GameMemento" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Memento\GameMemento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Memento.RobotMemento" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCCAAAEAgBABAAAAAAAQAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Memento\RobotMemento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Robot" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A4ICSCAAAEAgBABAAAACAAQQAAAABEIAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Robot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Cyborg" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Cyborg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Worker" Collapsed="true">
+    <Position X="1" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Scientist" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Scientist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.RobotCreator" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\RobotCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.WorkerCreator" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\WorkerCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.CyborgCreator" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\CyborgCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.ScientistCreator" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\ScientistCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.Stone" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgACAAAAgAAAAAAAAAEAAAGCAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\Stone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Decorator.ValuableStone" Collapsed="true">
+    <Position X="3.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\ValuableStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.OrdinaryStone" Collapsed="true">
+    <Position X="6.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\OrdinaryStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.StoneDecorator" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\StoneDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.CollapseStone" Collapsed="true">
+    <Position X="3" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\CollapseStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.DecryptionStone" Collapsed="true">
+    <Position X="5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\DecryptionStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.PoisonedStone" Collapsed="true">
+    <Position X="7" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\PoisonedStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ClassLib.State.IGameState">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\IGameState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
