@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLib.Command.GameCommand">
+    <Position X="3.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIABAQAAAAAAAQAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command (NOPE)\GameCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="commands" />
+      <Field Name="commandsHistory" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLib.Command.MoveCommand" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Command (NOPE)\MoveCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Command.NoCommand" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command (NOPE)\NoCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Command.StoneCommand" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Command (NOPE)\StoneCommand.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="game" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Decorator.CollapseStone">
+    <Position X="19.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\CollapseStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.DecryptionStone">
+    <Position X="14.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\DecryptionStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.OrdinaryStone">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="ClassLib.Decorator.Stone" FixedFromPoint="true">
+      <Path>
+        <Point X="17.75" Y="3.786" />
+        <Point X="17.75" Y="4.125" />
+        <Point X="15.5" Y="4.125" />
+        <Point X="15.5" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\OrdinaryStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.PoisonedStone">
+    <Position X="17" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\PoisonedStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Decorator.Stone">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgACAAAAgAAAAAAAAAEAAAGCAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\Stone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Decorator.StoneDecorator">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Decorator\StoneDecorator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="stone" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassLib.Decorator.ValuableStone">
+    <Position X="19.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="ClassLib.Decorator.Stone" FixedFromPoint="true">
+      <Path>
+        <Point X="17.75" Y="3.786" />
+        <Point X="17.75" Y="4.125" />
+        <Point X="18.104" Y="4.125" Type="JumpStart" />
+        <Point X="18.271" Y="4.125" Type="JumpEnd" />
+        <Point X="20" Y="4.125" />
+        <Point X="20" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAABA=</HashCode>
+      <FileName>Decorator\ValuableStone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Cyborg">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Cyborg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.CyborgCreator">
+    <Position X="8.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\CyborgCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Robot">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Baggage" Type="ClassLib.Decorator.Stone" FixedFromPoint="true">
+      <Path>
+        <Point X="12" Y="1.938" />
+        <Point X="17" Y="1.938" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>A4ICSCAAAEAgBABAAAACAAQQAAAABEIAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Robot.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Baggage" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.RobotCreator">
+    <Position X="10.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\RobotCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Scientist">
+    <Position X="12.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Scientist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.ScientistCreator">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\ScientistCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.Worker">
+    <Position X="10.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <FileName>Factory Method\Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Factory_Method.WorkerCreator">
+    <Position X="10.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory Method\WorkerCreator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Map" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <AssociationLine Name="Stones" Type="ClassLib.Decorator.Stone" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.25" Y="1.75" />
+        <Point X="6.25" Y="0.125" />
+        <Point X="18.188" Y="0.125" />
+        <Point X="18.188" Y="0.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.082" Y="0.17" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABA=</HashCode>
+      <FileName>Map.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Stones" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Program">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLib.Memento.GameHistory">
+    <Position X="3.75" Y="8.25" Width="1.5" />
+    <AssociationLine Name="History" Type="ClassLib.Memento.GameMemento" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="9.312" />
+        <Point X="6.25" Y="9.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Memento\GameHistory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="History" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLib.Memento.GameMemento">
+    <Position X="6.25" Y="7.75" Width="1.5" />
+    <AssociationLine Name="Map" Type="ClassLib.Map" ManuallyRouted="true">
+      <Path>
+        <Point X="6.25" Y="8.125" />
+        <Point X="6.062" Y="8.125" />
+        <Point X="6.062" Y="3.69" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Memento\GameMemento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Map" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassLib.Memento.RobotMemento">
+    <Position X="6.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="Baggage" Type="ClassLib.Decorator.Stone" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.562" Y="4.5" />
+        <Point X="7.562" Y="0.269" />
+        <Point X="17.125" Y="0.269" />
+        <Point X="17.125" Y="0.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACCCAAAEAgBABAAAAAAAQAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Memento\RobotMemento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Baggage" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLib.State.EndGame" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\EndGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.State.Game">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <AssociationLine Name="Robot" Type="ClassLib.Factory_Method.Robot" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.062" Y="4.75" />
+        <Point X="5.062" Y="4.34" />
+        <Point X="5.979" Y="4.34" Type="JumpStart" />
+        <Point X="6.145" Y="4.34" Type="JumpEnd" />
+        <Point X="7.479" Y="4.34" Type="JumpStart" />
+        <Point X="7.645" Y="4.34" Type="JumpEnd" />
+        <Point X="10.5" Y="4.34" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Map" Type="ClassLib.Map" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.875" Y="4.75" />
+        <Point X="4.875" Y="2.34" />
+        <Point X="5.5" Y="2.34" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAEAQAAEABAAIAAAAAAiAAEABAAAAAAACAAARAAAAAA=</HashCode>
+      <FileName>State\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+      <Property Name="Robot" />
+      <Property Name="Map" />
+      <Property Name="GameHistory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassLib.State.GameProcess" BaseTypeListCollapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\GameProcess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.State.StartMenu" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\StartMenu.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLib.Visitor.StoneVisitor" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAAg=</HashCode>
+      <FileName>Visitor (NOPE)\StoneVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ClassLib.Command.ICommand">
+    <Position X="1.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Command (NOPE)\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClassLib.State.IGameState">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>State\IGameState.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ClassLib.Visitor.IStoneVisitor">
+    <Position X="17" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAAg=</HashCode>
+      <FileName>Visitor (NOPE)\IStoneVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

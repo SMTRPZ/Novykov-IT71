@@ -4,3 +4,8 @@ C:\Users\danil\source\repos\RobotsGame\ClassLib\bin\Debug\ClassLib.pdb
 C:\Users\danil\source\repos\RobotsGame\ClassLib\obj\Debug\ClassLib.csproj.CoreCompileInputs.cache
 C:\Users\danil\source\repos\RobotsGame\ClassLib\obj\Debug\ClassLib.dll
 C:\Users\danil\source\repos\RobotsGame\ClassLib\obj\Debug\ClassLib.pdb
+C:\Temp\Refactoring\Novykov-IT71\3 - unit tests\ClassLib\bin\Debug\ClassLib.dll.config
+C:\Temp\Refactoring\Novykov-IT71\3 - unit tests\ClassLib\bin\Debug\ClassLib.dll
+C:\Temp\Refactoring\Novykov-IT71\3 - unit tests\ClassLib\bin\Debug\ClassLib.pdb
+C:\Temp\Refactoring\Novykov-IT71\3 - unit tests\ClassLib\obj\Debug\ClassLib.dll
+C:\Temp\Refactoring\Novykov-IT71\3 - unit tests\ClassLib\obj\Debug\ClassLib.pdb

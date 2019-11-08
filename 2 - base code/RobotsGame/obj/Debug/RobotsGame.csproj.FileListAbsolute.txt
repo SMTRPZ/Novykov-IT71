@@ -20,3 +20,13 @@ C:\Users\danil\Desktop\RobotsGame\2 - base code\RobotsGame\obj\Debug\RobotsGame.
 C:\Users\danil\Desktop\RobotsGame\2 - base code\RobotsGame\obj\Debug\RobotsGame.csproj.CopyComplete
 C:\Users\danil\Desktop\RobotsGame\2 - base code\RobotsGame\obj\Debug\RobotsGame.exe
 C:\Users\danil\Desktop\RobotsGame\2 - base code\RobotsGame\obj\Debug\RobotsGame.pdb
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\RobotsGame.exe.config
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\RobotsGame.exe
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\RobotsGame.pdb
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\ClassLib.dll
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\ClassLib.pdb
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\bin\Debug\ClassLib.dll.config
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\obj\Debug\RobotsGame.csprojAssemblyReference.cache
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\obj\Debug\RobotsGame.csproj.CopyComplete
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\obj\Debug\RobotsGame.exe
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\RobotsGame\obj\Debug\RobotsGame.pdb

@@ -12,3 +12,9 @@ C:\Users\danil\Desktop\RobotsGame\2 - base code\ClassLib\obj\Debug\ClassLib.cspr
 C:\Users\danil\Desktop\RobotsGame\2 - base code\ClassLib\obj\Debug\ClassLib.csproj.CoreCompileInputs.cache
 C:\Users\danil\Desktop\RobotsGame\2 - base code\ClassLib\obj\Debug\ClassLib.dll
 C:\Users\danil\Desktop\RobotsGame\2 - base code\ClassLib\obj\Debug\ClassLib.pdb
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\bin\Debug\ClassLib.dll.config
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\bin\Debug\ClassLib.dll
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\bin\Debug\ClassLib.pdb
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\obj\Debug\ClassLib.csprojAssemblyReference.cache
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\obj\Debug\ClassLib.dll
+C:\Temp\Refactoring\Novykov-IT71\2 - base code\ClassLib\obj\Debug\ClassLib.pdb
