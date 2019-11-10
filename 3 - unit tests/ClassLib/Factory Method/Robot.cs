@@ -5,44 +5,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ClassLib.Factory_Method
 {
-    public abstract class Robot
+    public abstract class Robot : RobotInfo
     {
-        public Guid Id { get; protected set; }
-
-        public string RobotImageBase64 { get; protected set; }
-
-        public string Name { get; protected set; }
-
-        public string Description { get; protected set; }
-
-        public double BatteryCharge { get; protected set; }
-
-        public double MaxWeight { get; protected set; }
-
-        public double CurrentWeight { get; protected set; }
-
-        public int Health { get; protected set; }
-
-        public List<Stone> Baggage { get; protected set; }
-
         protected List<Stone> StonesToDrop { get; private set; }
 
-        public Robot(string image, string name, string desc, double battery, double maxw)
+        public Robot(string image, string name, string desc, double battery, double maxw) : base(Guid.NewGuid(),
+            image, name, desc, battery, maxw, 0, 100, new List<Stone>())
         {
-            Id = Guid.NewGuid();
-            RobotImageBase64 = image;
-            Name = name;
-            Description = desc;
-            BatteryCharge = battery;
-            MaxWeight = maxw;
-            Baggage = new List<Stone>();
             StonesToDrop = new List<Stone>();
-            CurrentWeight = 0;
-            Health = 100;
         }
 
         public abstract string GetInfo();
@@ -59,7 +32,7 @@ namespace ClassLib.Factory_Method
 
         internal string DropCollapsedStone(Stone st)
         {
-            string info = "Was droped(collapse destroy it). " + Baggage.FirstOrDefault(x => x == st).GetInfo();
+            string info = "Was dropped(collapse destroy it). " + Baggage.FirstOrDefault(x => x == st).GetInfo();
             StonesToDrop.Add(st);
             return info;
         }
@@ -71,21 +44,13 @@ namespace ClassLib.Factory_Method
             {
                 baggage.Add((Stone)item.Clone());
             }
-            return new RobotMemento(Id, RobotImageBase64, Name, Description, BatteryCharge, MaxWeight, CurrentWeight, Health, baggage);
+            return new RobotMemento(this);
         }
 
         public string RestoreState(RobotMemento robotMemento)
         {
-            Id = robotMemento.Id;
-            RobotImageBase64 = robotMemento.RobotImageBase64;
-            Name = robotMemento.Name;
-            Description = robotMemento.Description;
-            BatteryCharge = robotMemento.BatteryCharge;
-            MaxWeight = robotMemento.MaxWeight;
-            Baggage = robotMemento.Baggage;
-            CurrentWeight = robotMemento.CurrentWeight;
-            Health = robotMemento.Health;
-            return "State succesfully restored. " + GetInfo() + "\r\n";
+            base.RestoreState(robotMemento);
+            return "State successfully restored. " + GetInfo() + "\r\n";
         }
 
         public abstract string FinalInfo();

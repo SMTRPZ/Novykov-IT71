@@ -8,6 +8,6 @@ namespace ClassLib.Factory_Method
 {
     public abstract class RobotCreator
     {
-        abstract public Robot Create(string image);
+        public abstract Robot Create(string image);
     }
 }

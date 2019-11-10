@@ -66,6 +66,7 @@
     <Compile Include="Memento\GameMemento.cs" />
     <Compile Include="Memento\RobotMemento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RobotInfo.cs" />
     <Compile Include="State\EndGame.cs" />
     <Compile Include="State\Game.cs" />
     <Compile Include="State\GameProcess.cs" />

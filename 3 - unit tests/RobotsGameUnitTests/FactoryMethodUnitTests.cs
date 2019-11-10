@@ -40,7 +40,7 @@ namespace RobotsGameUnitTests
             Assert.AreEqual(robot.GetBaggageInfo(), "Total weight: " + 10 + ", total cost: " + 15 + ", free space: " + 190);
 
             res = robot.Turn();
-            Assert.AreEqual(res, "Battery charge: " + 98 + ", battery lost: " + 2 + ", " + "Was droped(collapse destroy it). " + stone.GetInfo());
+            Assert.AreEqual(res, "Battery charge: " + 98 + ", battery lost: " + 2 + ", " + "Was dropped(collapse destroy it). " + stone.GetInfo());
             Assert.AreEqual(robot.Baggage.Count, 0);
             Assert.AreEqual(robot.GetBaggageInfo(), "Total weight: " + 0 + ", total cost: " + 0 + ", free space: " + 200);
         }
