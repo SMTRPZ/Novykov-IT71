@@ -20,25 +20,9 @@ namespace ClassLib.Decorator
 
         }
 
-        public override void DecreaseHealth()
-        {
-            if (StoneHealth > 0 && Collapses)
-                StoneHealth--;
-        }
-
         public override double GetCost()
         {
             return stone.GetCost() * 2;
-        }
-
-        public override string GetInfo()
-        {
-            string res = "Cost: " + GetCost() + ", weight: " + Weight + ", description: " + Description;
-            if (Collapses)
-                res += ", stone health: " + StoneHealth;
-            if (Damage > 0)
-                res += ", damage: " + Damage;
-            return res;
         }
 
         public override object Clone()
