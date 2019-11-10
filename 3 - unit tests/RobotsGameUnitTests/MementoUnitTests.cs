@@ -35,7 +35,7 @@ namespace RobotsGameUnitTests
                 + (robotEnegry - 1) + ", battery lost: " + 1 + ", ");
             Assert.AreEqual(game.Robot.BatteryCharge, robotEnegry - 1);
 
-            game.Robot.RestoreState(gameHistory.GetLastState().GetRobotMemento());
+            game.Robot.RestoreState(gameHistory.GetLastState().RobotMemento);
 
             Assert.AreEqual(game.Robot.BatteryCharge, robotEnegry);
         }

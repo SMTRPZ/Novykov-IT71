@@ -83,10 +83,10 @@ namespace ClassLib.State
                                 + "\r\n What will U do?" : "Empty";
                             if (map != "Empty")
                             {
-                                return game.Robot.RestoreState(memento.GetRobotMemento()) + ". Move counter: " 
+                                return game.Robot.RestoreState(memento.RobotMemento) + ". Move counter: " 
                                     + memento.MoveCounter + "\r\nIn fronr of you lies: " + map + "\r\n";
                             }
-                            return game.Robot.RestoreState(memento.GetRobotMemento()) + ". Move counter: " 
+                            return game.Robot.RestoreState(memento.RobotMemento) + ". Move counter: " 
                                 + memento.MoveCounter + "\r\nYou need to go forward, there nothing to do";
                         }
                         else

@@ -7,7 +7,7 @@ namespace ClassLib.Memento
 {
     public class RobotMemento : RobotInfo
     {
-        public  RobotMemento(Robot robot) : base(robot)
+        public  RobotMemento(RobotInfo info) : base(info)
         { }
 
         public RobotMemento(Guid id, string image, string name, string desc,
