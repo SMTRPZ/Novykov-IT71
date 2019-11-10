@@ -10,6 +10,7 @@ namespace ClassLib.Factory_Method
 {
     public abstract class Robot : RobotInfo
     {
+        protected Random Random { get; }
         protected List<Stone> StonesToDrop { get; private set; }
 
         public Robot(string image, string name, string desc, double battery, double maxw) : base(Guid.NewGuid(),
@@ -19,12 +20,22 @@ namespace ClassLib.Factory_Method
             StonesToDrop = new List<Stone>();
         }
 
-        public abstract string GetInfo();
-        protected Random Random { get; }
-
         public abstract bool CanBeDamagedByStone { get; }
 
         protected abstract bool CanDecrypt();
+
+        public string GetInfo()
+        {
+            string info = $"Id: {Id}, image: {RobotImageBase64}, name: {Name}" +
+                          $", description: {Description}, battery charge: {BatteryCharge}";
+
+            if(CanBeDamagedByStone) info += $", health: {Health}";
+
+            info += $", max weight: {MaxWeight}, current weight: {CurrentWeight}" +
+                    $", baggage count: {Baggage.Count}";
+
+            return info;
+        }
 
         public string AddStone(Stone stone)
         {

@@ -21,12 +21,5 @@ namespace ClassLib.Factory_Method
         {
             return true;
         }
-
-        public override string GetInfo()
-        {
-            return "Id: " + Id + ", image: " + RobotImageBase64 + ", name: " + Name + ", description: " + Description
-                + ", battery charge: " + BatteryCharge + ", max weight: " + MaxWeight + ", current weight: " + CurrentWeight
-                + ", baggage count: " + Baggage.Count;
-        }
     }
 }

@@ -23,13 +23,6 @@ namespace ClassLib.Factory_Method
             return Random.Next(5) < 3;
         }
 
-        public override string GetInfo()
-        {
-            return "Id: " + Id + ", image: " + RobotImageBase64 + ", name: " + Name + ", description: " + Description
-                + ", battery charge: " + BatteryCharge + ", health: " + Health + ", max weight: " + MaxWeight + ", current weight: " + CurrentWeight
-                + ", baggage count: " + Baggage.Count;
-        }
-
         protected override void ActionAfterTurn()
         {
             if (CurrentWeight > MaxWeight * 0.8 &&

@@ -61,12 +61,12 @@
   <Class Name="ClassLib.Factory_Method.Cyborg">
     <Position X="0.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAABAAAAAAgAAAAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAgAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Cyborg.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.CyborgCreator">
-    <Position X="0.5" Y="13.5" Width="1.5" />
+    <Position X="0.5" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\CyborgCreator.cs</FileName>
@@ -83,7 +83,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ClassLib.Factory_Method.RobotCreator">
-    <Position X="2.75" Y="11.75" Width="1.5" />
+    <Position X="2.75" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\RobotCreator.cs</FileName>
@@ -92,12 +92,12 @@
   <Class Name="ClassLib.Factory_Method.Scientist">
     <Position X="5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAABAAAAAAAAAAAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Scientist.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.ScientistCreator">
-    <Position X="5" Y="13.5" Width="1.5" />
+    <Position X="5" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\ScientistCreator.cs</FileName>
@@ -106,12 +106,12 @@
   <Class Name="ClassLib.Factory_Method.Worker">
     <Position X="2.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAABAAAAAAAAAAAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAEAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.WorkerCreator">
-    <Position X="2.75" Y="13.5" Width="1.5" />
+    <Position X="2.75" Y="12.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\WorkerCreator.cs</FileName>
@@ -185,7 +185,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.State.EndGame" BaseTypeListCollapsed="true">
-    <Position X="10.25" Y="13" Width="1.5" />
+    <Position X="15.75" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>State\EndGame.cs</FileName>
@@ -197,8 +197,9 @@
     <AssociationLine Name="State" Type="ClassLib.State.IGameState" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="14.5" Y="13.594" />
-        <Point X="14.5" Y="14.125" />
-        <Point X="13.5" Y="14.125" />
+        <Point X="14.5" Y="13.969" />
+        <Point X="15.938" Y="13.969" />
+        <Point X="15.938" Y="13.68" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="GameHistory" Type="ClassLib.Memento.GameHistory">
@@ -237,7 +238,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ClassLib.State.GameProcess" BaseTypeListCollapsed="true">
-    <Position X="8.5" Y="13" Width="1.5" />
+    <Position X="15.75" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>State\GameProcess.cs</FileName>
@@ -245,7 +246,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ClassLib.State.StartMenu" BaseTypeListCollapsed="true">
-    <Position X="6.75" Y="13" Width="1.5" />
+    <Position X="15.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>State\StartMenu.cs</FileName>
@@ -260,14 +261,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.EnumerableCloner">
-    <Position X="13.75" Y="0.5" Width="1.5" />
+    <Position X="15.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EnumerableCloner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="ClassLib.State.IGameState">
-    <Position X="12" Y="13" Width="1.5" />
+    <Position X="15.75" Y="12" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>State\IGameState.cs</FileName>
