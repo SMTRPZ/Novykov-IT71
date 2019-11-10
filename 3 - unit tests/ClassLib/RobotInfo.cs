@@ -1,6 +1,7 @@
 ﻿using ClassLib.Decorator;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace ClassLib
@@ -30,11 +31,6 @@ namespace ClassLib
             RestoreState(id, image, name, desc, charge, maxw, curw, health, baggage);
         }
 
-        protected IEnumerable<T> DeepClone<T>(IEnumerable<T> iEnumerable) where T : ICloneable
-        {
-            return iEnumerable.Select(element => (T)element.Clone());
-        }
-
         protected void RestoreState(Guid id, string image, string name, string desc,
             double charge, double maxw, double curw, int health, IEnumerable<Stone> baggage)
         {
@@ -44,7 +40,7 @@ namespace ClassLib
             Description = desc;
             BatteryCharge = charge;
             MaxWeight = maxw;
-            Baggage = DeepClone(baggage).ToList();
+            Baggage = baggage.DeepClone().ToList();
             CurrentWeight = curw;
             Health = health;
         }

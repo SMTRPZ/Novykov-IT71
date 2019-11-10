@@ -53,6 +53,7 @@
     <Compile Include="Decorator\Stone.cs" />
     <Compile Include="Decorator\StoneDecorator.cs" />
     <Compile Include="Decorator\ValuableStone.cs" />
+    <Compile Include="EnumerableCloner.cs" />
     <Compile Include="Factory Method\Cyborg.cs" />
     <Compile Include="Factory Method\CyborgCreator.cs" />
     <Compile Include="Factory Method\Robot.cs" />
