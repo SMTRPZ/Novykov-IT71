@@ -30,41 +30,13 @@ namespace ClassLib.Factory_Method
                 + ", baggage count: " + Baggage.Count;
         }
 
-        public override string Turn()
+        protected override void ActionAfterTurn()
         {
-            string res = "";
-            int health = Health;
-            double battery = BatteryCharge;
-            foreach (var item in Baggage)
+            if (CurrentWeight > MaxWeight * 0.8 &&
+                Random.Next(11) < 3)
             {
-                if (item.Damage > 0)
-                    Health -= item.Damage;
-                if (item.Collapses)
-                {
-                    if (item.StoneHealth > 1)
-                        item.DecreaseHealth();
-                    else
-                        res += DropCollapsedStone(item);
-                }
-                BatteryCharge -= item.Weight * 0.1;
+                BatteryCharge = 0;
             }
-
-            foreach (var item in StonesToDrop)
-            {
-                CurrentWeight -= item.Weight;
-                Baggage.Remove(item);
-            }
-
-            BatteryCharge--;
-            if (CurrentWeight > MaxWeight * 0.8)
-            {
-                Random rnd = new Random();
-                if (rnd.Next(11) < 3)
-                {
-                    BatteryCharge = 0;
-                }
-            }
-            return "Turns harm: " + (health - Health) + ", battery charge: " + (BatteryCharge >= 0 ? BatteryCharge : 0) + ", battery lost: " + (battery - BatteryCharge) + ", " + res;
         }
 
         public override bool IsAlive()

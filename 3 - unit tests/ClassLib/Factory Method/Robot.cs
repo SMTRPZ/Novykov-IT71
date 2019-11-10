@@ -93,7 +93,50 @@ namespace ClassLib.Factory_Method
             return info;
         }
 
-        public abstract string Turn();
+        protected virtual void ActionAfterTurn()
+        { }
+
+        public string Turn()
+        {
+            string res = "";
+            int health = Health;
+            double battery = BatteryCharge;
+            foreach (var item in Baggage)
+            {
+                if (CanBeDamagedByStone && item.Damage > 0)
+                    Health -= item.Damage;
+                if (item.Collapses)
+                {
+                    if (item.StoneHealth > 1)
+                        item.DecreaseHealth();
+                    else
+                        res += DropCollapsedStone(item);
+                }
+                BatteryCharge -= item.Weight * 0.1;
+            }
+
+            foreach (var item in StonesToDrop)
+            {
+                CurrentWeight -= item.Weight;
+                Baggage.Remove(item);
+            }
+
+            BatteryCharge--;
+
+            ActionAfterTurn();
+
+            string info = "battery charge: " + (BatteryCharge >= 0 ? BatteryCharge : 0)
+                   + ", battery lost: " + (battery - BatteryCharge) + ", " + res;
+
+            if (CanBeDamagedByStone)
+            {
+                info = $"turns harm: {health - Health}, {info}";
+            }
+
+            info = char.ToUpper(info[0]) + info.Substring(1);
+
+            return info;
+        }
 
         public abstract bool IsAlive();
 

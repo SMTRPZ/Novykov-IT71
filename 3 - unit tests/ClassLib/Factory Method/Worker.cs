@@ -29,33 +29,6 @@ namespace ClassLib.Factory_Method
                 + ", baggage count: " + Baggage.Count;
         }
 
-        public override string Turn()
-        {
-            string res = "";
-            double battery = BatteryCharge;
-
-            foreach (var item in Baggage)
-            {
-                if (item.Collapses)
-                {
-                    if (item.StoneHealth > 1)
-                        item.DecreaseHealth();
-                    else
-                        res += DropCollapsedStone(item);
-                }
-                BatteryCharge -= item.Weight * 0.1; 
-            }
-
-            foreach (var item in StonesToDrop)
-            {
-                CurrentWeight -= item.Weight;
-                Baggage.Remove(item);
-            }
-
-            BatteryCharge--;
-            return "Battery charge: " + BatteryCharge + ", battery lost: " + (battery - BatteryCharge) + ", " + res;
-        }
-
         public override bool IsAlive()
         {
             if (BatteryCharge > 0)
