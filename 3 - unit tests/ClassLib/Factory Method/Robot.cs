@@ -138,9 +138,12 @@ namespace ClassLib.Factory_Method
             return info;
         }
 
-        public abstract bool IsAlive();
+        public bool IsAlive()
+        {
+            return Health > 0 && BatteryCharge > 0;
+        }
 
-        internal string DropCollapsedStone(Stone st)
+    internal string DropCollapsedStone(Stone st)
         {
             string info = "Was dropped(collapse destroy it). " + Baggage.FirstOrDefault(x => x == st).GetInfo();
             StonesToDrop.Add(st);
@@ -158,6 +161,17 @@ namespace ClassLib.Factory_Method
             return "State successfully restored. " + GetInfo() + "\r\n";
         }
 
-        public abstract string FinalInfo();
+        public string FinalInfo()
+        {
+            double cost = Baggage.Sum(item => item.GetCost());
+
+            string info = $"Total baggage cost: {cost}, battery level: {(BatteryCharge > 0 ? BatteryCharge : 0)}";
+
+            if (CanBeDamagedByStone) info += ", health: " + Health;
+
+            info += '.';
+
+            return info;
+        }
     }
 }

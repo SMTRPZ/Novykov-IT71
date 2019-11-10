@@ -38,23 +38,5 @@ namespace ClassLib.Factory_Method
                 BatteryCharge = 0;
             }
         }
-
-        public override bool IsAlive()
-        {
-            if (Health > 0)
-                if (BatteryCharge > 0)
-                    return true;
-            return false;
-        }
-
-        public override string FinalInfo()
-        {
-            double cost = 0;
-            foreach (var item in Baggage)
-            {
-                cost += item.GetCost();
-            }
-            return "Total baggage cost: " + cost + ", battery level: " + (BatteryCharge > 0 ? BatteryCharge : 0) + ", health: " + Health + ".";
-        }
     }
 }
