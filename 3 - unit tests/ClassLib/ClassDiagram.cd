@@ -59,21 +59,21 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.Cyborg">
-    <Position X="0.5" Y="8.25" Width="1.5" />
+    <Position X="0.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Cyborg.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.CyborgCreator">
-    <Position X="0.5" Y="12.75" Width="1.5" />
+    <Position X="0.5" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\CyborgCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.Robot">
-    <Position X="2.75" Y="4.5" Width="1.5" />
+    <Position X="2.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>A4IAQAAAABAAAAAAAAACQAAQEAAABEAAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Robot.cs</FileName>
@@ -83,35 +83,35 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ClassLib.Factory_Method.RobotCreator">
-    <Position X="2.75" Y="11" Width="1.5" />
+    <Position X="2.75" Y="11.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\RobotCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.Scientist">
-    <Position X="5" Y="8.25" Width="1.5" />
+    <Position X="5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Scientist.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.ScientistCreator">
-    <Position X="5" Y="12.75" Width="1.5" />
+    <Position X="5" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\ScientistCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.Worker">
-    <Position X="2.75" Y="8.25" Width="1.5" />
+    <Position X="2.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.Factory_Method.WorkerCreator">
-    <Position X="2.75" Y="12.75" Width="1.5" />
+    <Position X="2.75" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory Method\WorkerCreator.cs</FileName>
@@ -221,8 +221,8 @@
       <Path>
         <Point X="13.75" Y="12.688" />
         <Point X="6.604" Y="12.688" />
-        <Point X="6.604" Y="8.181" />
-        <Point X="4.25" Y="8.181" />
+        <Point X="6.604" Y="7.931" />
+        <Point X="4.25" Y="7.931" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>

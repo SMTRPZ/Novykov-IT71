@@ -23,18 +23,6 @@ namespace ClassLib.Factory_Method
             return Random.Next(5) < 3;
         }
 
-        public override string DropStone()
-        {
-            if (Baggage.Count > 0)
-            {
-                string info = Baggage[Baggage.Count - 1].GetInfo();
-                CurrentWeight -= Baggage[Baggage.Count - 1].Weight;
-                Baggage.RemoveAt(Baggage.Count - 1);
-                return "Succesfully droped: " + info;
-            }
-            return "Baggage already empty";
-        }
-
         public override string GetBaggageInfo()
         {
             double cost = 0;

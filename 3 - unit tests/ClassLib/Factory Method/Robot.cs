@@ -63,7 +63,15 @@ namespace ClassLib.Factory_Method
             }
         }
 
-        public abstract string DropStone();
+        public string DropStone()
+        {
+            if (Baggage.Count == 0) return "Baggage already empty";
+            int lastIndex = Baggage.Count - 1;
+            string info = Baggage[lastIndex].GetInfo();
+            CurrentWeight -= Baggage[lastIndex].Weight;
+            Baggage.RemoveAt(lastIndex);
+            return "Succesfully droped: " + info;
+        }
 
         public abstract string GetBaggageInfo();
 
