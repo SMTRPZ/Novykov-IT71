@@ -7,7 +7,7 @@ namespace ClassLib
     {
         public static IEnumerable<T> DeepClone<T>(this IEnumerable<T> iEnumerable) where T : ICloneable
         {
-            foreach (var element in iEnumerable) yield return (T)element.Clone();
+            foreach (var element in iEnumerable) yield return (T)element?.Clone();
         }
     }
 }

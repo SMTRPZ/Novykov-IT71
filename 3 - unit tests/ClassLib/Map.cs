@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+// ReSharper disable All
 
 namespace ClassLib
 {
@@ -53,20 +54,7 @@ namespace ClassLib
 
         public object Clone()
         {
-            List<Stone> stones = new List<Stone>();
-
-            for (int i = 0; i < Stones.Count; i++)
-            {
-                Stone st = Stones[i];
-                if (st != null)
-                {
-                    stones.Add((Stone)st.Clone());
-                }
-                else
-                {
-                    stones.Add(null);
-                }
-            }
+            List<Stone> stones = Stones.DeepClone().ToList();
 
             return new Map(stones);
         }

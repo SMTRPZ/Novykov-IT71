@@ -194,6 +194,13 @@
   </Class>
   <Class Name="ClassLib.State.Game">
     <Position X="13.75" Y="10.5" Width="1.5" />
+    <AssociationLine Name="State" Type="ClassLib.State.IGameState" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="13.594" />
+        <Point X="14.5" Y="14.125" />
+        <Point X="13.5" Y="14.125" />
+      </Path>
+    </AssociationLine>
     <AssociationLine Name="GameHistory" Type="ClassLib.Memento.GameHistory">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="-1.062" Y="0.171" />
@@ -210,10 +217,10 @@
         <Position X="-0.077" Y="-0.322" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Robot" Type="ClassLib.Factory_Method.Robot" ManuallyRouted="true">
+    <AssociationLine Name="Robot" Type="ClassLib.Factory_Method.Robot" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="13.75" Y="12.766" />
-        <Point X="6.604" Y="12.766" />
+        <Point X="13.75" Y="12.688" />
+        <Point X="6.604" Y="12.688" />
         <Point X="6.604" Y="7.41" />
         <Point X="4.25" Y="7.41" />
       </Path>
