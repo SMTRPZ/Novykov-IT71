@@ -61,7 +61,7 @@
   <Class Name="ClassLib.Factory_Method.Cyborg">
     <Position X="0.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Cyborg.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -75,7 +75,7 @@
   <Class Name="ClassLib.Factory_Method.Robot">
     <Position X="2.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>A4IAQAAAAAAAAAAAAAACQAAQAAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>A4IAQAAAABAAAAAAAAACQAAQEAAABEAAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Robot.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -92,7 +92,7 @@
   <Class Name="ClassLib.Factory_Method.Scientist">
     <Position X="5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Scientist.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -106,7 +106,7 @@
   <Class Name="ClassLib.Factory_Method.Worker">
     <Position X="2.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQIAQAAAAAAAAAAAAAACAAAAAAAABEAAAAAAAAAAAQA=</HashCode>
+      <HashCode>AQAAQAAAABAAAAAAAAACAAAAEAAABEAAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -221,8 +221,8 @@
       <Path>
         <Point X="13.75" Y="12.688" />
         <Point X="6.604" Y="12.688" />
-        <Point X="6.604" Y="7.41" />
-        <Point X="4.25" Y="7.41" />
+        <Point X="6.604" Y="8.181" />
+        <Point X="4.25" Y="8.181" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>

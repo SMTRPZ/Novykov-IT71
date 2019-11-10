@@ -15,36 +15,11 @@ namespace ClassLib.Factory_Method
 
         }
 
-        public override string AddStone(params Stone[] stone)
+        public override bool CanBeDamagedByStone => false;
+
+        protected override bool CanDecrypt()
         {
-            Stone st = stone[0];
-            if (st.Weight + CurrentWeight <= MaxWeight)
-            {
-                if (st.Decryption)
-                {
-                    Random random = new Random();
-                    if (random.Next(11) == 0)
-                    {
-                        Baggage.Add(st);
-                        CurrentWeight += st.Weight;
-                        return st.GetInfo() + "\r\n Succesfully decrypted and added";
-                    }
-                    else
-                    {
-                        return "Decryption failed";
-                    }
-                }
-                else
-                {
-                    Baggage.Add(st);
-                    CurrentWeight += st.Weight;
-                    return st.GetInfo() + "\r\n Succesfully added";
-                }
-            }
-            else
-            {
-                return "You can`t lift this stone. Robot overload";
-            }
+            return Random.Next(11) == 0;
         }
 
         public override string DropStone()

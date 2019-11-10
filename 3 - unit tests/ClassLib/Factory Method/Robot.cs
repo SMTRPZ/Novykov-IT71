@@ -15,12 +15,53 @@ namespace ClassLib.Factory_Method
         public Robot(string image, string name, string desc, double battery, double maxw) : base(Guid.NewGuid(),
             image, name, desc, battery, maxw, 0, 100, new List<Stone>())
         {
+            Random = new Random();
             StonesToDrop = new List<Stone>();
         }
 
         public abstract string GetInfo();
+        protected Random Random { get; }
 
-        public abstract string AddStone(params Stone[] stone);
+        public abstract bool CanBeDamagedByStone { get; }
+
+        protected abstract bool CanDecrypt();
+
+        public string AddStone(Stone stone)
+        {
+            if (stone.Weight + CurrentWeight <= MaxWeight)
+            {
+                if (!CanBeDamagedByStone || stone.Damage < Health)
+                {
+                    if (stone.Decryption)
+                    {
+                        if (CanDecrypt())
+                        {
+                            Baggage.Add(stone);
+                            CurrentWeight += stone.Weight;
+                            return stone.GetInfo() + "\r\n Succesfully decrypted and added";
+                        }
+                        else
+                        {
+                            return "Decryption failed";
+                        }
+                    }
+                    else
+                    {
+                        Baggage.Add(stone);
+                        CurrentWeight += stone.Weight;
+                        return stone.GetInfo() + "\r\n Succesfully added";
+                    }
+                }
+                else
+                {
+                    return "You are dead (9((9";
+                }
+            }
+            else
+            {
+                return "You can`t lift this stone. Robot overload";
+            }
+        }
 
         public abstract string DropStone();
 
