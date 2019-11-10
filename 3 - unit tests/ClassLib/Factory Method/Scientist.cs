@@ -22,18 +22,6 @@ namespace ClassLib.Factory_Method
             return true;
         }
 
-        public override string GetBaggageInfo()
-        {
-            double cost = 0;
-            double weight = 0;
-            foreach (var item in Baggage)
-            {
-                cost += item.GetCost();
-                weight += item.Weight;
-            }
-            return "Total weight: " + weight + ", total cost: " + cost + ", free space: " + (MaxWeight - weight);
-        }
-
         public override string GetInfo()
         {
             return "Id: " + Id + ", image: " + RobotImageBase64 + ", name: " + Name + ", description: " + Description

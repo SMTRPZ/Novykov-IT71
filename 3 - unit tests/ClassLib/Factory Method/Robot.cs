@@ -73,7 +73,25 @@ namespace ClassLib.Factory_Method
             return "Succesfully droped: " + info;
         }
 
-        public abstract string GetBaggageInfo();
+        public string GetBaggageInfo()
+        {
+            double cost = 0;
+            double weight = 0;
+            int damage = 0;
+
+            foreach (var item in Baggage)
+            {
+                cost += item.GetCost();
+                weight += item.Weight;
+                damage += item.Damage;
+            }
+
+            string info = $"Total weight: {weight}, total cost: {cost}, free space: {MaxWeight - weight}";
+
+            if (CanBeDamagedByStone) info += $", damage per turn: {damage}, current hp: {Health}";
+
+            return info;
+        }
 
         public abstract string Turn();
 

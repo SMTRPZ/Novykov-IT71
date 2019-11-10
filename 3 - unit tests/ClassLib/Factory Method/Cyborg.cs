@@ -23,21 +23,6 @@ namespace ClassLib.Factory_Method
             return Random.Next(5) < 3;
         }
 
-        public override string GetBaggageInfo()
-        {
-            double cost = 0;
-            double weight = 0;
-            int damage = 0;
-            foreach (var item in Baggage)
-            {
-                cost += item.GetCost();
-                weight += item.Weight;
-                damage += item.Damage;
-            }
-            return "Total weight: " + weight + ", total cost: " + cost + ", free space: " + (MaxWeight - weight)
-                + ", damage per turn: " + damage + ", current hp: " + Health;
-        }
-
         public override string GetInfo()
         {
             return "Id: " + Id + ", image: " + RobotImageBase64 + ", name: " + Name + ", description: " + Description
