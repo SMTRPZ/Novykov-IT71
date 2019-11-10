@@ -1,11 +1,13 @@
 ﻿using ClassLib.Decorator;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ClassLib
 {
     public abstract class RobotInfo
     {
+        #region Properties
         public Guid Id { get; protected set; }
         public string RobotImageBase64 { get; protected set; }
         public string Name { get; protected set; }
@@ -15,6 +17,7 @@ namespace ClassLib
         public double CurrentWeight { get; protected set; }
         public int Health { get; protected set; }
         public List<Stone> Baggage { get; protected set; }
+        #endregion
 
         public RobotInfo(RobotInfo info)
         {
@@ -27,6 +30,11 @@ namespace ClassLib
             RestoreState(id, image, name, desc, charge, maxw, curw, health, baggage);
         }
 
+        protected IEnumerable<T> DeepClone<T>(IEnumerable<T> iEnumerable) where T : ICloneable
+        {
+            return iEnumerable.Select(element => (T)element.Clone());
+        }
+
         protected void RestoreState(Guid id, string image, string name, string desc,
             double charge, double maxw, double curw, int health, IEnumerable<Stone> baggage)
         {
@@ -36,14 +44,15 @@ namespace ClassLib
             Description = desc;
             BatteryCharge = charge;
             MaxWeight = maxw;
-            Baggage = new List<Stone>(baggage);
+            Baggage = DeepClone(baggage).ToList();
             CurrentWeight = curw;
             Health = health;
         }
         protected void RestoreState(RobotInfo info)
         {
             RestoreState(info.Id, info.RobotImageBase64, info.Name, info.Description,
-                info.BatteryCharge, info.MaxWeight, info.CurrentWeight, info.Health, info.Baggage);
+                info.BatteryCharge, info.MaxWeight, info.CurrentWeight,
+                info.Health, info.Baggage);
         }
     }
 }

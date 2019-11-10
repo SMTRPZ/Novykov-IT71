@@ -39,11 +39,6 @@ namespace ClassLib.Factory_Method
 
         public RobotMemento SaveState()
         {
-            List<Stone> baggage = new List<Stone>();
-            foreach (var item in Baggage)
-            {
-                baggage.Add((Stone)item.Clone());
-            }
             return new RobotMemento(this);
         }
 
