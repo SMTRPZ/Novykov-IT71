@@ -32,7 +32,7 @@ namespace ClassLib.State
                     case "stone":
                         if (map != "Empty")
                         {
-                            game.GameHistory.Add(new GameMemento(game.Robot.SaveState(), game.MoveCounter, (Map)game.Map.Clone()));
+                            game.Save();
 
                             res = game.Robot.AddStone(game.Map.Stones[game.MoveCounter]);
                             game.Map.Stones[game.MoveCounter] = null;
@@ -41,7 +41,7 @@ namespace ClassLib.State
                         }
                         return "You need to go forward, there nothing to do";
                     case "next":
-                        game.GameHistory.Add(new GameMemento(game.Robot.SaveState(), game.MoveCounter, (Map)game.Map.Clone()));
+                        game.Save();
 
                         game.IncrementMoveCounter();
                         var append = game.Robot.Turn();

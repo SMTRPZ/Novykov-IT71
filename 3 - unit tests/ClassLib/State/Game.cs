@@ -48,6 +48,11 @@ namespace ClassLib.State
             MoveCounter = 0;
         }
 
+        public void Save()
+        {
+            GameHistory.Add(new GameMemento(Robot.SaveState(), MoveCounter, (Map)Map.Clone()));
+        }
+
         public void IncrementMoveCounter()
         {
             MoveCounter++;
