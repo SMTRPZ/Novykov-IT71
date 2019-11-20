@@ -27,7 +27,7 @@ namespace ClassLib.Factory_Method
             return true;
         }
 
-        public override string Turn()
+        /*public override string Turn()
         {
             string res = "";
             int health = Health;
@@ -62,7 +62,7 @@ namespace ClassLib.Factory_Method
                 }
             }
             return "Turns harm: " + (health - Health) + ", battery charge: " + (BatteryCharge >= 0 ? BatteryCharge : 0) + ", battery lost: " + (battery - BatteryCharge) + ", " + res;
-        }
+        }*/
 
     }
 }

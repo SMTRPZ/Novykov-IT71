@@ -13,11 +13,6 @@ namespace ClassLib.Decorator
 
         }
 
-        public override void DecreaseHealth()
-        {
-
-        }
-
         public override double GetCost()
         {
             return Weight;

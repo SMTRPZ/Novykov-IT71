@@ -76,9 +76,6 @@ namespace ClassLib.Factory_Method
                 return stone.GetInfo() + "\r\n Succesfully added";
             }
 
-           
-            return "Decryption failed";
-
         }
 
 
@@ -156,7 +153,7 @@ namespace ClassLib.Factory_Method
             string resRest = "attery charge: " + (BatteryCharge >= 0 ? BatteryCharge : 0) + 
                 ", battery lost: " + (battery - BatteryCharge) + ", " + res;
 
-            return resStart.Length > 0 ? resStart + ", b" :
+            return resStart.Length > 0 ? resStart + ", b" + resRest :
                 "B" + resRest;
         }
 
