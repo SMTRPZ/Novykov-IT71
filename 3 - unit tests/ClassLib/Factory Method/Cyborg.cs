@@ -16,77 +16,15 @@ namespace ClassLib.Factory_Method
             
         }
 
-        public override string AddStone(params Stone[] stone)
+        protected override bool TryDecrypt(Stone stone)
         {
-            Stone st = stone[0];
-            if (st.Weight + CurrentWeight <= MaxWeight)
-            {
-                if (st.Damage < Health)
-                {
-                    if (st.Decryption)
-                    {
-                        Random random = new Random();
-                        if (random.Next(5) < 3)
-                        {
-                            Baggage.Add(st);
-                            CurrentWeight += st.Weight;
-                            return st.GetInfo() + "\r\n Succesfully decrypted and added";
-                        }
-                        else
-                        {
-                            return "Decryption failed";
-                        }
-                    }
-                    else
-                    {
-                        Baggage.Add(st);
-                        CurrentWeight += st.Weight;
-                        return st.GetInfo() + "\r\n Succesfully added";
-                    }
-                }
-                else
-                {
-                    return "You are dead (9((9";
-                }
-            }
-            else
-            {
-                return "You can`t lift this stone. Robot overload";
-            }
+            return new Random().Next(5) < 3;
         }
 
-        public override string DropStone()
-        {
-            if (Baggage.Count > 0)
-            {
-                string info = Baggage[Baggage.Count - 1].GetInfo();
-                CurrentWeight -= Baggage[Baggage.Count - 1].Weight;
-                Baggage.RemoveAt(Baggage.Count - 1);
-                return "Succesfully droped: " + info;
-            }
-            return "Baggage already empty";
-        }
 
-        public override string GetBaggageInfo()
+        protected override bool IsDamagable()
         {
-            double cost = 0;
-            double weight = 0;
-            int damage = 0;
-            foreach (var item in Baggage)
-            {
-                cost += item.GetCost();
-                weight += item.Weight;
-                damage += item.Damage;
-            }
-            return "Total weight: " + weight + ", total cost: " + cost + ", free space: " + (MaxWeight - weight)
-                + ", damage per turn: " + damage + ", current hp: " + Health;
-        }
-
-        public override string GetInfo()
-        {
-            return "Id: " + Id + ", image: " + RobotImageBase64 + ", name: " + Name + ", description: " + Description
-                + ", battery charge: " + BatteryCharge + ", health: " + Health + ", max weight: " + MaxWeight + ", current weight: " + CurrentWeight
-                + ", baggage count: " + Baggage.Count;
+            return true;
         }
 
         public override string Turn()
@@ -126,22 +64,5 @@ namespace ClassLib.Factory_Method
             return "Turns harm: " + (health - Health) + ", battery charge: " + (BatteryCharge >= 0 ? BatteryCharge : 0) + ", battery lost: " + (battery - BatteryCharge) + ", " + res;
         }
 
-        public override bool IsAlive()
-        {
-            if (Health > 0)
-                if (BatteryCharge > 0)
-                    return true;
-            return false;
-        }
-
-        public override string FinalInfo()
-        {
-            double cost = 0;
-            foreach (var item in Baggage)
-            {
-                cost += item.GetCost();
-            }
-            return "Total baggage cost: " + cost + ", battery level: " + (BatteryCharge > 0 ? BatteryCharge : 0) + ", health: " + Health + ".";
-        }
     }
 }

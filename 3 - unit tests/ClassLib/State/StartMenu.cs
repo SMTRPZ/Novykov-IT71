@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLib.State.InputReceivers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace ClassLib.State
 {
     public class StartMenu : IGameState
     {
+        private InputReceiver inputReceiver = new StartMenuInputReceiver();
         public string NextStage(Game game)
         {
             game.State = new GameProcess();
@@ -22,28 +24,8 @@ namespace ClassLib.State
 
         public string Turn(Game game, string input)
         {
-            string res;
-            switch (input.ToLower())
-            {
-                case "start":
-                    return game.PreviousState();
-                case "end":
-                    res = "Your current progress deleted. ";
-                    game.NextStage();
-                    return game.NextStage();
-                case "new":
-                    game.GenerateNewGame();
-                    //game.GameHistory.Add(game.Robot.SaveState());
-                    //game.GameHistory.History.Peek().SetMoveCounter(game.MoveCounter);
-                    res = game.NextStage() + "\r\n";
-                    return "\r\n" + res + "\r\n Your robot: " + game.Robot.GetInfo(); ;
-                case "help":
-                    return HelpMessage();
-                case "exit":
-                    return "Application will close in 3 sec. Tnx U!";
-                default:
-                    return "Incorrect input. Try again!";
-            }
+            if (input.ToLower()=="help") return HelpMessage();
+            return inputReceiver.HandleInput(input, game, "");
         }
 
         public string HelpMessage()

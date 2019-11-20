@@ -52,13 +52,13 @@ namespace RobotsGameUnitTests
         {
             var robot = CreateWorkerRobot();
 
-            Assert.AreEqual(robot.Description, "Highest payload and battery, 10% decode cargo");
+            Assert.AreEqual(robot.RobotInfo.Description, "Highest payload and battery, 10% decode cargo");
             Assert.AreEqual(robot.BatteryCharge, 100);
             Assert.AreEqual(robot.MaxWeight, 200);
-            Assert.AreEqual(robot.Name, "Worker");
-            Assert.AreEqual(robot.RobotImageBase64, "workerimage");
+            Assert.AreEqual(robot.RobotInfo.Name, "Worker");
+            Assert.AreEqual(robot.RobotInfo.RobotImageBase64, "workerimage");
 
-            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.Id + ", image: " + "workerimage" + ", name: " + "Worker" + ", description: " +
+            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.RobotInfo.Id + ", image: " + "workerimage" + ", name: " + "Worker" + ", description: " +
                 "Highest payload and battery, 10% decode cargo" + ", battery charge: " + 100 + ", max weight: " + 200 + ", current weight: " + 0
                 + ", baggage count: " + 0);
             Assert.IsTrue(robot.IsAlive());
@@ -153,14 +153,14 @@ namespace RobotsGameUnitTests
         {
             var robot = CreateCyborgRobot();
 
-            Assert.AreEqual(robot.Description, "Medium payload and battery, 60% decode cargo. Can die from poisoned stones." +
+            Assert.AreEqual(robot.RobotInfo.Description, "Medium payload and battery, 60% decode cargo. Can die from poisoned stones." +
                   " After 80% payload have 30% change to drop battery");
             Assert.AreEqual(robot.BatteryCharge, 70);
             Assert.AreEqual(robot.MaxWeight, 135);
-            Assert.AreEqual(robot.Name, "Cyborg");
-            Assert.AreEqual(robot.RobotImageBase64, "cyborgimage");
+            Assert.AreEqual(robot.RobotInfo.Name, "Cyborg");
+            Assert.AreEqual(robot.RobotInfo.RobotImageBase64, "cyborgimage");
 
-            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.Id + ", image: " + "cyborgimage" + ", name: " + "Cyborg" + ", description: " +
+            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.RobotInfo.Id + ", image: " + "cyborgimage" + ", name: " + "Cyborg" + ", description: " +
                 "Medium payload and battery, 60% decode cargo. Can die from poisoned stones. After 80% payload have 30% change to drop battery" + 
                 ", battery charge: " + 70 + ", health: " + 100 + ", max weight: " + 135 + ", current weight: " + 0 + ", baggage count: " + 0);
             Assert.IsTrue(robot.IsAlive());
@@ -256,13 +256,13 @@ namespace RobotsGameUnitTests
         {
             var robot = CreateScientistRobot();
 
-            Assert.AreEqual(robot.Description, "Lowest payload and battery, 100% decode cargo.");
+            Assert.AreEqual(robot.RobotInfo.Description, "Lowest payload and battery, 100% decode cargo.");
             Assert.AreEqual(robot.BatteryCharge, 50);
             Assert.AreEqual(robot.MaxWeight, 100);
-            Assert.AreEqual(robot.Name, "Scientist");
-            Assert.AreEqual(robot.RobotImageBase64, "scientistimage");
+            Assert.AreEqual(robot.RobotInfo.Name, "Scientist");
+            Assert.AreEqual(robot.RobotInfo.RobotImageBase64, "scientistimage");
 
-            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.Id + ", image: " + "scientistimage" + ", name: " + "Scientist" + ", description: " +
+            Assert.AreEqual(robot.GetInfo(), "Id: " + robot.RobotInfo.Id + ", image: " + "scientistimage" + ", name: " + "Scientist" + ", description: " +
                 "Lowest payload and battery, 100% decode cargo." + ", battery charge: " + 50 + ", max weight: " + 100 + ", current weight: " + 0
                 + ", baggage count: " + 0);
             Assert.IsTrue(robot.IsAlive());

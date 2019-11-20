@@ -57,6 +57,7 @@
     <Compile Include="Factory Method\CyborgCreator.cs" />
     <Compile Include="Factory Method\Robot.cs" />
     <Compile Include="Factory Method\RobotCreator.cs" />
+    <Compile Include="Factory Method\RobotInfo.cs" />
     <Compile Include="Factory Method\Scientist.cs" />
     <Compile Include="Factory Method\ScientistCreator.cs" />
     <Compile Include="Factory Method\Worker.cs" />
@@ -69,7 +70,11 @@
     <Compile Include="State\EndGame.cs" />
     <Compile Include="State\Game.cs" />
     <Compile Include="State\GameProcess.cs" />
+    <Compile Include="State\InputReceivers\EndGameInputRececiver.cs" />
+    <Compile Include="State\InputReceivers\GameProcessInputReceiver.cs" />
     <Compile Include="State\IGameState.cs" />
+    <Compile Include="State\InputReceivers\InputReceiver.cs" />
+    <Compile Include="State\InputReceivers\StartMenuInputReceiver.cs" />
     <Compile Include="State\StartMenu.cs" />
   </ItemGroup>
   <ItemGroup>

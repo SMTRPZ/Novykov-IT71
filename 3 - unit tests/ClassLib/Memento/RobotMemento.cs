@@ -1,4 +1,5 @@
 ﻿using ClassLib.Decorator;
+using ClassLib.Factory_Method;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,7 @@ namespace ClassLib.Memento
 {
     public class RobotMemento
     {
-        public Guid Id { get; protected set; }
-
-        public string RobotImageBase64 { get; protected set; }
-
-        public string Name { get; protected set; }
-
-        public string Description { get; protected set; }
+        public RobotInfo RobotInfo { get; private set; }
 
         public double BatteryCharge { get; protected set; }
 
@@ -27,12 +22,9 @@ namespace ClassLib.Memento
 
         public List<Stone> Baggage { get; protected set; }
 
-        public RobotMemento(Guid id, string image, string name, string desc, double batcharge, double maxw, double curw, int health, List<Stone> baggage)
+        public RobotMemento(RobotInfo info, double batcharge, double maxw, double curw, int health, List<Stone> baggage)
         {
-            Id = id;
-            RobotImageBase64 = image;
-            Name = name;
-            Description = desc;
+            RobotInfo = info;
             BatteryCharge = batcharge;
             MaxWeight = maxw;
             Baggage = baggage;

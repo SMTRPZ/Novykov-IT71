@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ClassLib.State.EndGame" Collapsed="true">
-    <Position X="13.25" Y="2.75" Width="1.5" />
+    <Position X="13.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAADAAAAAAAAAA=</HashCode>
       <FileName>State\EndGame.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ClassLib.State.Game">
-    <Position X="11.75" Y="3.5" Width="1.5" />
+    <Position X="10.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAEAQAAAABAAIAAAAAAiAAEABAAAAAAACAAARAAAAAA=</HashCode>
       <FileName>State\Game.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassLib.State.GameProcess" Collapsed="true">
-    <Position X="11.75" Y="2.75" Width="1.5" />
+    <Position X="12.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAADAAAAAAAAAA=</HashCode>
       <FileName>State\GameProcess.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ClassLib.State.StartMenu" Collapsed="true">
-    <Position X="10.25" Y="2.75" Width="1.5" />
+    <Position X="10.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAIAAAAA=</HashCode>
       <FileName>State\StartMenu.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ClassLib.Memento.GameHistory" Collapsed="true">
-    <Position X="8.25" Y="2.25" Width="1.5" />
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>Memento\GameHistory.cs</FileName>
@@ -55,7 +55,7 @@
   <Class Name="ClassLib.Factory_Method.Robot" Collapsed="true">
     <Position X="3" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>A4ICSCAAAEAgBABAAAACAAQQAAAABEIAAAAAAAAAAQA=</HashCode>
+      <HashCode>A4ICSCAAAEAgBABAAAACQAQQAAAABEIAAAAAAAAAAQA=</HashCode>
       <FileName>Factory Method\Robot.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -159,7 +159,7 @@
     </TypeIdentifier>
   </Class>
   <Interface Name="ClassLib.State.IGameState">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="12.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAAAAAEAAAACAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
       <FileName>State\IGameState.cs</FileName>
